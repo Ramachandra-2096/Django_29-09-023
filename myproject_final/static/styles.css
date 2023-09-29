@@ -1,0 +1,53 @@
+/* Apply some basic styling to your page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Style the table container */
+.table-container {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    border: 1px solid #ddd; /* Add a border for clarity */
+}
+#hh{
+    text-align: center;
+}
+/* Style the table */
+.table {
+    min-width: 100%; /* Ensure the table fills the container width */
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+
+/* Style the analysis plot */
+.analysis-plot {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

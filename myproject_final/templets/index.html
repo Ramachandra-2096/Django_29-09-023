@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello {{ result }},&emsp; Welcome ...</h1>
+        <br>
+        <br>
+        <h1>Data Analysis</h1>
+        <p>Current Time: {{ time }}</p>
+        
+        <h2>Data Table:</h2>
+        <div class="table-container">
+            <table class="table">
+                {{ sonar_data|safe }}
+            </table>
+        </div>
+        
+        <h2>Analysis Plot:</h2>
+        <img class="analysis-plot" src="data:image/png;base64,{{ analysis_plot_path }}" alt="Analysis Plot">
+        {% include "footer.html" %}
+    </div>
+    
+</body>
+
+</html>
